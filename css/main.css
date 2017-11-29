@@ -1,0 +1,364 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family:-apple-system,
+    /* Chrome >= 56 for OS X , Windows, Linux and Android */ 
+    system-ui,
+    /* Chrome < 56 for OS X */
+    BlinkMacSystemFont,
+    /* Windows */
+    "Segoe UI", 
+    /* Android */
+    "Roboto", 
+    /* Basic web fallback */
+    "Helvetica Neue", Arial, sans-serif;
+    padding-top: 50px; 
+    margin:auto;
+    /*padding:0.3rem;*/
+}
+
+
+#map{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    border-radius: 10px ;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+img[src="icon.jpg"] {
+  border-radius: 50%;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 0.5rem;
+}
+
+#banner {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url("../images/my(14).jpg");
+    background-size:cover;
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+
+#banner-fg {
+    height: 100%;
+    text-align: center;
+    background-color: rgba(166, 168, 178, 0.61)
+}
+
+.banner-text{
+    /*0 0 0.2rem rgba(0, 0, 0, 0.3), 0 0 1rem rgba(0, 0, 0, 0.7)*/
+    text-shadow: 0 0 0.2rem rgb(212, 211, 211), 0 0 1rem rgb(71, 0, 48);
+    color: #fff;
+}
+
+#banner-fg a:active {
+    color: white;
+}
+
+/*.logo-first {
+    color: #0275d8;
+    font-weight: bold;
+    background: #F2C418;
+    border-radius: 5px ;
+}
+
+.logo-last {
+    color: #F2C418;
+    font-weight: bold;
+    background: #0275d8;
+    border-radius: 5px ;
+}
+*/
+
+
+.logo-first {
+    color: #F2C418;
+    font-weight: bold;
+    background: #002147;
+    border-radius: 5px ;
+    border-style: solid;
+    border-color: #002147;
+}
+
+.logo-last {
+    color: #002147;
+    font-weight: bold;
+    background: #F2C418;
+    border-radius: 5px ;
+    border-style: solid;
+    border-color: #002147;
+}
+
+/*
+.navbar-offset {
+    margin-top: -5rem;
+    padding-top: 5rem;
+}
+*/
+section {
+/*    margin-top: 4rem;
+    margin-left: 1rem;*/
+    margin: auto;
+}
+
+section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    margin-top: 4rem;
+    /*margin-bottom: 0.5rem;*/
+    background-color: #f7f7f7;
+    padding: 1rem;
+    color: gray;
+    background: -webkit-linear-gradient(left top, lightgrey , gold);
+    background: -o-linear-gradient(left top, lightgrey , gold);
+    background: linear-gradient(to left top, lightgrey , gold);
+}
+
+#img-circle{
+    border-radius: 50%;
+}
+
+#navbarNav a{
+    color: #F2C418;
+    background-color: #002147;
+    /*border-radius: 10px;*/
+    font-size: 0.8rem;
+    margin:0.5px;
+    border-style: solid;
+    border-color: #F2C418;
+}
+
+#navbarNav .active a{
+    color: #002147;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: #F2C418;
+    /*transition: color 10s;*/
+    border-style: solid;
+    border-color: #002147;
+
+}
+
+.social-buttons{
+    font-size: 1.5rem;
+}
+
+#banner{
+    background-attachment: scroll;
+}
+
+#galleryPage{
+    background-image: url("../images/p10.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0;
+    padding:0;
+}
+
+#resumePage{
+    /*background: url("../images/back.jpg");*/
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: rgba(49, 176, 213, 0.23);
+}
+
+#resumePage section{
+    background-color: rgba(0, 227, 255, 0.29);
+    /*background-color: rgba(240, 78, 235, 0.08);*/
+    /*padding: 0.8rem;*/
+    padding: 0.8rem;
+}
+
+#gallery img{
+    height: 80%;
+    width: 80%;
+    margin: 2rem;
+    border-radius:2rem ;
+    display: block;
+}
+
+#target{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+#projectImagesWrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+.projectimages{
+    width:  250px;
+    height: 200px;    
+    border: solid;
+    border-color: grey;    
+    margin: 2rem auto;    
+    opacity: 0.5;
+    display: block;
+}
+
+.projectimages:hover{
+    opacity: 1;
+}
+#projectContent p{
+    text-align: left;
+}
+#showprojectimages{
+    opacity: 1;
+}
+
+#projectImagesWrapper{
+    text-align: center;
+    margin: 2rem;
+}
+
+/*small sm landscape phones*/
+@media only screen and (min-width: 575px) {
+    #banner{
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+    #resumePage section {
+        width:48%;
+        display: block;
+        /*padding: ;*/
+    }
+}
+
+
+/*medium md portrait tablets*/
+@media only screen and (min-width: 768px) {
+    /*resume page part*/
+    #resumePage section{ 
+      display: block;
+      width:80%;
+      margin:auto;
+    }
+    
+    /*gallery page part*/
+    #gallery img{
+        height: 40%;
+        width: 30%;
+        margin: 1.66%;
+        float: left;
+        border-radius:2rem ;
+    }
+
+    #gallery::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /*project page part */
+    #projectContent{
+        display: inline-block;
+    }
+    #description {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    #showprojectimages{
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+
+/*large lg landscape tablets, desktop*/
+@media only screen and (min-width: 992px) {
+    #resumePage section > div{ 
+      display: inline-block;
+      width:30%;
+      vertical-align: top;
+      /*background-color:red;*/
+      margin:auto;
+    }
+    .projectimages{
+        display: inline-block;
+    }
+
+}
+
+#resumeHeader, #galleryHeader, #projectsHeader{
+    display: block;
+    padding-top: 70px;
+    text-align: center;
+    color: #002147;
+}
+
+#resumePage #download{
+    text-align: right;
+    font-size: 1.1rem;
+    margin: auto;
+    padding-right: 8rem;
+    padding-top: 1.5rem; 
+}
+
+#resumePage .time h5{
+    color: grey;
+    font-style:italic;
+}
+
+#resumePage .location h5{
+    color: grey;
+    font-style:italic;
+}
+
+
+.bg-faded{
+    background: -webkit-linear-gradient(left top, lightgrey , gold);
+    background: -o-linear-gradient(left top, lightgrey , gold);
+    background: linear-gradient(to left top, lightgrey , gold);
+}
+
+.scrolltopbutton{
+    position: fixed; 
+    bottom: 20px;
+    right: 30px; 
+    z-index: 1; 
+    border: solid; 
+    background-color: #002147; 
+    color: #F2C418;
+    border-radius: 1rem; 
+    opacity: 0;
+}
+
+#footer ul{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#result{
+    text-align: left;
+}
+
+#footer p{
+    visibility: hidden;
+}
+
