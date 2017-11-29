@@ -3,6 +3,19 @@ html, body {
     height: 100%;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600);
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700 !important;
+}
+
+p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
 body{
     font-family:-apple-system,
     /* Chrome >= 56 for OS X , Windows, Linux and Android */ 
