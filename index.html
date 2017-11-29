@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <title>Home</title>
-    </head>
-    <body>
-        <div class="container">
-          <header class="header clearfix">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">Adoption Agency</a>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="browse.html">Browse Pets</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="howitworks.html">Our Process</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="contactus.html">Contact Us</a>
-                      </li>
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                  </div>
-                </nav>
-          </header>
-        <main role="main">
 
-          <div class="jumbotron">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+
+<body data-spy="scroll" data-target="#nav">
+    <nav class="navbar fixed-top navbar-toggleable navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><span class="logo-first">Adoption Agency</span><span class="logo-last">&nbsp;&nbsp;</span></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="nav" class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="browse.html"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp;Browse Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="howitworks.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Our Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <header id="home">
+        <h1>Home</h1>
+    </header>
+    <main role="main">
+        <div class="jumbotron">
             <h1 class="display-3">Welcome to {...}</h1>
             <p class="lead">We are a pet adoption agency unlike any other! Not only do we safely rescue, rehabilitate, and care for our favorite critters, we are also famous for housing over 300 different species of animals! Whether you are a cozy, cuddly character or an energetic adventurer, we know we’ll find the perfect pet partner for you!</p>
             <!-- <p><a class="btn btn-lg btn-success" href="#" role="button">Browse our pets</a></p> -->
-          </div>
-
-          <div class="container">
+        </div>
+        <div class="container">
             <div class="col-lg-6">
-              <h4>Browse Our Pets</h4>
-              <p>Find your newest family member today or Meet the pets of [...] Pet Adoption Agency</p>
-
-              <h4>Learn Our Process</h4>
-              <p>We care for and match our pets like no one else</p>
-
-              <h4>Contact Us</h4>
-              <p>We love talking to fellow pet-lovers!</p>
+                <h4>Browse Our Pets</h4>
+                <p>Find your newest family member today or Meet the pets of [...] Pet Adoption Agency</p>
+                <h4>Learn Our Process</h4>
+                <p>We care for and match our pets like no one else</p>
+                <h4>Contact Us</h4>
+                <p>We love talking to fellow pet-lovers!</p>
             </div>
-          </div>
+        </div>
+    </main>
+    <button class="scrolltopbutton" type="button"><i class="fa fa-arrow-up" aria-hidden="true">Top</i></button>
 
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                  <div class="row">
-                      <div class="col-md-6">
-                          <p>&copy; Company 2017</p>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="row">
-                  Connect with us on: <a tabindex="1" class="nav-link fa fa-facebook" aria-label="Facebook" href="mailto:ykkoo@umich.edu"></a><a tabindex="1" class="nav-link fa fa-instagram" aria-label="Instagram" href="https://www.linkedin.com/in/clairekoo"></a><a tabindex="1" class="nav-link fa fa-twitter" aria-label="Twitter" href="https://www.facebook.com/youkyung.koo"></a>
-                          </div>
-                    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span>Copyright&copy;</span>
+                    <span>Wen Chen&nbsp;</span>
+                    <span>10/30/2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/hhh146578">
+                      <i class="fa fa-github" title = "github" aria-hidden = "true"></i><p>github</p>
+                    </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/hungwen.chen.71">
+                      <i class="fa fa-facebook" title = "facebook" aria-hidden = "true"></i><p>fb</p>
+                    </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/hungwenc/">
+                      <i class="fa fa-linkedin" title = "linkedin" aria-hidden = "true"></i><p>linkedin</p>
+                    </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
         </div>
-    </body>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<!--     <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
 </html>
