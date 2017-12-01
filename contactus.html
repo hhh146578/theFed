@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,48 +7,44 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>Contact Us</title>
+    <title>Pow Wow - Contact Us</title>
 </head>
-<!-- Header -->
-
 <body data-spy="scroll" data-target="#nav">
-    <nav class="navbar fixed-top navbar-toggleable navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><span class="logo-first">Adoption Agency</span></a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul id="nav" class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="browse.html"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp;Browse Pets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="howitworks.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Our Process</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contactus.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Contact Us</a>
-                </li>
-            </ul>
-<!--             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
- -->
-        </div>
-    </nav>
-        <!-- Contact Us Form -->
-        <!-- Adapted from: https://bootsnipp.com/snippets/featured/contact-us-page -->
-        <div class="jumbotron jumbotron-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-12">
-                        <h1 class="h1">
-                    Woof, woof! <small>Bark or holler at us!</small></h1>
-                    </div>
-                </div>
+    <header id="home">
+        <nav class="navbar fixed-top navbar-toggleable navbar-light">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="logo-first">Pow Wow</span></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav" class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="browse.html"><i class="fa fa-paw" aria-hidden="true"></i>&nbsp;Browse Pets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="howitworks.html"><i class="fa fa-handshake-o" aria-hidden="true"></i>&nbsp;Our Process</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactus.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Contact Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" >
+                    <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                    <button id="navbarSearch" class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main role="main" id="contactus">
+<!-- Contact Us Form -->
+<!-- Adapted from: https://bootsnipp.com/snippets/featured/contact-us-page -->
+        <div class="jumbotron">
+            <div class="col-lg-6">
+                <h1 class="display-3">Woof woof!<br>Contact Us</h1>
+                <p class="lead">Bark or holler at us! Adopting a pet is a big step — but we have a feeling your family is ready to grow. If you have any questions about getting tips on choosing the right pet for your lifestyle, preparing your home for a furry family member, or becoming a training expert before bringing your pet home, you know we are here for you. For more information about pet adoption, shoot us the message by filling the form below.</p>
             </div>
         </div>
         <div class="container">
@@ -57,102 +52,91 @@
                 <div class="col-md-8">
                     <div class="well well-sm">
                         <form>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">
-                                            Name</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">
-                                            Email Address</label>
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                            </span>
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="subject">
-                                            Subject</label>
-                                        <select id="subject" name="subject" class="form-control" required="required">
-                                            <option value="na" selected="">Choose One:</option>
-                                            <option value="service">Adoption Services</option>
-                                            <option value="suggestions">Potential Pets</option>
-                                            <option value="product">Other</option>
-                                        </select>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="name">
-                                            Message</label>
-                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
                                 </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                                        Send Message</button>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        Subject</label>
+                                    <select id="subject" name="subject" class="form-control" required="required">
+                                        <option value="na" selected="">Choose One:</option>
+                                        <option value="service">Adoption Services</option>
+                                        <option value="suggestions">Potential Pets</option>
+                                        <option value="product">Other</option>
+                                    </select>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Send Message</button>
+                            </div>
+                        </div>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <form>
-                        <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
-                        <address>
-                            <strong>Quirky Pet Adoption Agency</strong>
-                            <br> 1234 Jabberwok Lane
-                            <br> San Francisco, CA 94107
-                            <br>
-                            <abbr title="Phone">
-                                P:</abbr>
-                            (123) 567-5809
-                        </address>
+                    <legend><span class="glyphicon glyphicon-globe"></span>Our office</legend>
+                    <address>
+                        <strong>Pow Wow Pet Adoption Agency</strong><br>
+                        1234 Jabberwok Lane<br>
+                        San Francisco, CA 94107<br>
+                        <abbr title="Phone">
+                            P:</abbr>
+                        (123) 567-5809
+                    </address>
                     </form>
                 </div>
             </div>
         </div>
-
-    <div id="map">
-    </div>
-    <button class="scrolltopbutton" type="button"><i class="fa fa-arrow-up" aria-hidden="true">Top</i></button>
-
+    </main>
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span>Copyright&copy;</span>
-                    <span>theFed&nbsp;</span>
-                    <span>11/29/2017</span>
+                    <small>&copy; 2017 Pow Wow Pet Adoption Agency</small>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
-                            <a href="https://github.com/hhh146578/theFed">
-                              <i class="fa fa-github" title = "github" aria-hidden = "true"></i><p>github</p>
-                            </a>
+                            <a href="https://github.com/hhh146578">
+                      <i class="fa fa-github" title = "github" aria-hidden = "true"></i>
+                    </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/Adoptapet-134008530597086/?modal=admin_todo_tour/">
-                              <i class="fa fa-facebook" title = "facebook" aria-hidden = "true"></i><p>fb</p>
-                            </a>
+                            <a href="https://www.facebook.com/hungwen.chen.71">
+                      <i class="fa fa-facebook" title = "facebook" aria-hidden = "true"></i>
+                    </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/hungwenc/">
+                      <i class="fa fa-linkedin" title = "linkedin" aria-hidden = "true"></i>
+                    </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="script/generateMap.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGD352Uy7zH5XMLZ__x2XyuMyUOxVDLgQ&language=en&callback=initMap">
-    </script> 
-    <script src="script/main.js"></script>
+  </div>
 </body>

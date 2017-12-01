@@ -1,39 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker);
+
 html, body {
     width: 100%;
     height: 100%;
 }
+body{
+    padding-top: 50px;
+    margin:auto;
+    font-family: 'Oswald', sans-serif !important;
+}
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600);
 
-h2{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700 !important;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Permanent Marker', cursive !important;
 }
 
 p{
-    font-family:'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-body{
-    font-family:-apple-system,
-    /* Chrome >= 56 for OS X , Windows, Linux and Android */ 
-    system-ui,
-    /* Chrome < 56 for OS X */
-    BlinkMacSystemFont,
-    /* Windows */
-    "Segoe UI", 
-    /* Android */
-    "Roboto", 
-    /* Basic web fallback */
-    "Helvetica Neue", Arial, sans-serif;
-    padding-top: 50px; 
-    margin:auto;
-    /*padding:0.3rem;*/
+    font-family: 'Oswald', sans-serif !important;
 }
 
+/*
+  ========================================
+  Top Navigation
+  ========================================
+*/
 
+nav{
+    background-color: #DA012E !important;
+}
+
+.logo-first {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+/*Reference for colorchange on hover: https://codepen.io/raaasin/pen/quvHr*/
+.logo-first:hover{
+  -webkit-animation:colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  10% {
+    color: #8e44ad;
+  }
+  20% {
+    color: #1abc9c;
+  }
+  30% {
+    color: #d35400;
+  }
+  40% {
+    color: blue;
+  }
+  50% {
+    color: #34495e;
+  }
+  60% {
+    color: blue;
+  }
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  90% {
+    color: #2980b9;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+.navbar-brand{
+    padding-bottom: 0.5rem;
+}
+
+#navbarNav a, #navbarSearch {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    background-color: #DA012E;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+.nav-item{
+    width: 10rem;
+    padding-right: 0.25rem;
+}
+
+#navbarNav a:hover, #navbarSearch:hover{
+    transition: 0.3s;
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+#navbarSearch{
+    width: 6rem;
+}
+#navbarNav .active a{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+.display-3{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.jumbotron h1,h2,h3{
+    font-family: 'Permanent Marker', cursive !important;
+    color: white;
+}
+
+.jumbotron p{
+    font-family: 'Oswald', sans-serif !important;
+    color: white;
+}
+
+#welcome .jumbotron {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../img/catndog.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+#gallery .jumbotron{
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("../img/dogwalking.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 20px right 0px;
+    position: relative;
+}
+
+#contactus .jumbotron{
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("../img/cat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+#ourprocess .jumbotron{
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url("../img/dogwaiting.png");
+    background-repeat: no-repeat;
+    background-position: top 20px right 0px;
+    position: relative;
+    background-size: contain;
+}
+
+.quicklinks .col-lg-12 a{
+    color: black;
+    text-decoration: none;
+}
+
+.quicklinks h4:hover{
+  -webkit-animation:colorchange 20s infinite alternate;
+}
 #map{
     width: 70%;
     height: 70%;
@@ -43,88 +199,7 @@ body{
     /*overflow: hidden;*/
 }
 
-img[src="icon.jpg"] {
-  border-radius: 50%;
-}
-
-.navbar-nav .nav-link {
-    padding-left: 0.5rem;
-}
-
-#banner {
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-position: center;
-    background-image: url("../images/my(14).jpg");
-    background-size:cover;
-    background-position: left bottom;
-    background-attachment: fixed;
-    background-repeat: repeat;
-}
-
-
-#banner-fg {
-    height: 100%;
-    text-align: center;
-    background-color: rgba(166, 168, 178, 0.61)
-}
-
-.banner-text{
-    /*0 0 0.2rem rgba(0, 0, 0, 0.3), 0 0 1rem rgba(0, 0, 0, 0.7)*/
-    text-shadow: 0 0 0.2rem rgb(212, 211, 211), 0 0 1rem rgb(71, 0, 48);
-    color: #fff;
-}
-
-#banner-fg a:active {
-    color: white;
-}
-
-/*.logo-first {
-    color: #0275d8;
-    font-weight: bold;
-    background: #F2C418;
-    border-radius: 5px ;
-}
-
-.logo-last {
-    color: #F2C418;
-    font-weight: bold;
-    background: #0275d8;
-    border-radius: 5px ;
-}
-*/
-
-
-.logo-first {
-    color: #F2C418;
-    font-weight: bold;
-    background: #002147;
-    border-radius: 5px ;
-    border-style: solid;
-    border-color: #002147;
-}
-
-.logo-last {
-    color: #002147;
-    font-weight: bold;
-    background: #F2C418;
-    border-radius: 5px ;
-    border-style: solid;
-    border-color: #002147;
-}
-
-/*
-.navbar-offset {
-    margin-top: -5rem;
-    padding-top: 5rem;
-}
-*/
 section {
-/*    margin-top: 4rem;
-    margin-left: 1rem;*/
     margin: auto;
 }
 
@@ -133,6 +208,27 @@ section h2 {
     margin-bottom: 1rem;
 }
 
+#gallery img{
+    height: 80%;
+    width: 80%;
+    margin: 2rem;
+    border-radius:2rem ;
+}
+
+#target{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+form p{
+    font-family: 'Oswald', sans-serif !important;
+}
+/*
+  ========================================
+  Footer
+  ========================================
+*/
 
 footer {
     /*position: absolute;*/
@@ -142,138 +238,78 @@ footer {
     background-color: #f7f7f7;
     padding: 1rem;
     color: gray;
-    background: -webkit-linear-gradient(left top, lightgrey , gold);
+    /*background: -webkit-linear-gradient(left top, lightgrey , gold);
     background: -o-linear-gradient(left top, lightgrey , gold);
-    background: linear-gradient(to left top, lightgrey , gold);
-}
-
-#img-circle{
-    border-radius: 50%;
-}
-
-#navbarNav a{
-    color: #F2C418;
-    background-color: #002147;
-    /*border-radius: 10px;*/
-    font-size: 0.8rem;
-    margin:0.5px;
-    border-style: solid;
-    border-color: #F2C418;
-}
-
-#navbarNav .active a{
-    color: #002147;
-    font-weight: bold;
-    font-size: 0.8rem;
-    background-color: #F2C418;
-    /*transition: color 10s;*/
-    border-style: solid;
-    border-color: #002147;
-
+    background: linear-gradient(to left top, lightgrey , gold);*/
 }
 
 .social-buttons{
     font-size: 1.5rem;
 }
 
-#banner{
-    background-attachment: scroll;
+.list-inline-item{
+    padding-right: 0.5rem;
 }
 
-#galleryPage{
-    background-image: url("../images/p10.jpg");
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin:0;
-    padding:0;
+i{
+    color: #DA012E;
 }
 
-#resumePage{
-    background: url("../images/back.jpg");
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(49, 176, 213, 0.23);
+footer small{
+    font-family: 'Oswald', sans-serif;
 }
 
-#resumePage section{
-    background-color: rgba(0, 227, 255, 0.29);
-    /*background-color: rgba(240, 78, 235, 0.08);*/
-    /*padding: 0.8rem;*/
-    padding: 0.8rem;
+footer .col-md-8{
+    text-align: right;
 }
 
-#gallery img{
-    height: 80%;
-    width: 80%;
-    margin: 2rem;
-    border-radius:2rem ;
-    display: block;
-}
+/*
+  ========================================
+  Large Screen View
+  ========================================
+*/
+@media only screen and (max-width: 1023px) {
+    /*.bg-faded{
+        background: -webkit-linear-gradient(left top, lightgrey , gold);
+        background: -o-linear-gradient(left top, lightgrey , gold);
+        background: linear-gradient(to left top, lightgrey , gold);
+    }*/
 
-#target{
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-}
-#projectImagesWrapper{
-    margin-left: auto;
-    margin-right: auto;
-}
-.projectimages{
-    width:  250px;
-    height: 200px;    
-    border: solid;
-    border-color: grey;    
-    margin: 2rem auto;    
-    opacity: 0.5;
-    display: block;
-}
-
-.projectimages:hover{
-    opacity: 1;
-}
-#projectContent p{
-    text-align: left;
-}
-#showprojectimages{
-    opacity: 1;
-}
-
-#projectImagesWrapper{
-    text-align: center;
-    margin: 2rem;
-}
-
-/*small sm landscape phones*/
-@media only screen and (min-width: 575px) {
-    #banner{
-        background-attachment: scroll;
-        background-position: center;
+    .scrolltopbutton{
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 1;
+        border: solid;
+        background-color: #002147;
+        color: #F2C418;
+        border-radius: 1rem;
+        opacity: 0;
     }
 
-    #resumePage section {
-        width:48%;
-        display: block;
-        /*padding: ;*/
+    #footer ul{
+        text-align: center;
+        margin: 0 auto;
     }
+
+    #result{
+        text-align: left;
+    }
+
+    #footer p{
+        visibility: hidden;
+    }
+
 }
 
-
-/*medium md portrait tablets*/
-@media only screen and (min-width: 768px) {
-    /*resume page part*/
-    #resumePage section{ 
-      display: block;
-      width:80%;
-      margin:auto;
-    }
-    
+/*
+  ========================================
+  Tablet View
+  ========================================
+*/
+@media only screen and (max-width: 767px) {
     /*gallery page part*/
-    #gallery img{
+    /*#gallery img{
         height: 40%;
         width: 30%;
         margin: 1.66%;
@@ -285,12 +321,13 @@ footer {
         content: '';
         display: block;
         clear: both;
-    }
+    }*/
 
     /*project page part */
     #projectContent{
         display: inline-block;
     }
+
     #description {
         display: inline-block;
         width: 50%;
@@ -302,105 +339,38 @@ footer {
     }
 }
 
+/*
+  ========================================
+  Mobile View
+  ========================================
+*/
+@media only screen and (max-width: 419px) {
 
-/*large lg landscape tablets, desktop*/
-@media only screen and (min-width: 992px) {
-    #resumePage section > div{ 
-      display: inline-block;
-      width:30%;
-      vertical-align: top;
-      /*background-color:red;*/
-      margin:auto;
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
     }
-    .projectimages{
-        display: inline-block;
+
+    #navbarSearch{
+        width:100%;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    p{
+        font-size: 1rem !important;
+    }
+
+    footer{
+        text-align: center;
     }
 
 }
-
-#resumeHeader, #galleryHeader, #projectsHeader{
-    display: block;
-    padding-top: 70px;
-    text-align: center;
-    color: #002147;
-}
-
-#resumePage #download{
-    text-align: right;
-    font-size: 1.1rem;
-    margin: auto;
-    padding-right: 8rem;
-    padding-top: 1.5rem; 
-}
-
-#resumePage .time h5{
-    color: grey;
-    font-style:italic;
-}
-
-#resumePage .location h5{
-    color: grey;
-    font-style:italic;
-}
-
-
-.bg-faded{
-    background: -webkit-linear-gradient(left top, lightgrey , gold);
-    background: -o-linear-gradient(left top, lightgrey , gold);
-    background: linear-gradient(to left top, lightgrey , gold);
-}
-
-.scrolltopbutton{
-    position: fixed; 
-    bottom: 20px;
-    right: 30px; 
-    z-index: 1; 
-    border: solid; 
-    background-color: #002147; 
-    color: #F2C418;
-    border-radius: 1rem; 
-    opacity: 0;
-}
-
-#footer ul{
-    text-align: center;
-    margin: 0 auto;
-}
-
-#result{
-    text-align: left;
-}
-
-#footer p{
-    visibility: hidden;
-}
-
-
-/*browse dogs page-------------------*/
-
-.imgContainer#caption {
-    position: relative;
-}
-.imgContainer#caption .text {
-    position: absolute;     
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    opacity: 0;
-    transition: all 0.8s ease;          
-}
-.imgContainer#caption .text h1 {      
-    margin: 0;      
-    color: black;
-}
-.imgContainer#caption:hover .text {
-    opacity: 1;
-    
-}
-.imgContainer#caption:hover img {
-    opacity: 0.5;
-}
-
-
-
