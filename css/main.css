@@ -353,7 +353,9 @@ footer .col-md-8{
     footer{
         text-align: center;
     }
-
+    .imgContainer#caption .text h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /*
@@ -365,21 +367,23 @@ footer .col-md-8{
     position: relative;
 }
 .imgContainer#caption .text {
-    position: absolute;     
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     opacity: 0;
-    transition: all 0.8s ease;          
+    transition: all 0.8s ease;
 }
-.imgContainer#caption .text h1 {      
-    margin: 0;      
+.imgContainer#caption .text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
     color: black;
 }
 .imgContainer#caption:hover .text {
     opacity: 1;
-    
+
 }
 .imgContainer#caption:hover img {
     opacity: 0.5;
