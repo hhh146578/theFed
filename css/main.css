@@ -190,14 +190,8 @@ nav{
 .quicklinks h4:hover{
   -webkit-animation:colorchange 20s infinite alternate;
 }
-#map{
-    width: 70%;
-    height: 70%;
-    margin: auto;
-    border-radius: 10px ;
-    position: relative;
-    /*overflow: hidden;*/
-}
+
+
 
 section {
     margin: auto;
@@ -274,19 +268,6 @@ footer .col-md-8{
         background: -o-linear-gradient(left top, lightgrey , gold);
         background: linear-gradient(to left top, lightgrey , gold);
     }*/
-
-    .scrolltopbutton{
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 1;
-        border: solid;
-        background-color: #002147;
-        color: #F2C418;
-        border-radius: 1rem;
-        opacity: 0;
-    }
-
     #footer ul{
         text-align: center;
         margin: 0 auto;
@@ -373,4 +354,77 @@ footer .col-md-8{
         text-align: center;
     }
 
+}
+
+/*
+  ========================================
+  browse dogs page
+  ========================================
+*/
+.imgContainer#caption {
+    position: relative;
+}
+.imgContainer#caption .text {
+    position: absolute;     
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;          
+}
+.imgContainer#caption .text h1 {      
+    margin: 0;      
+    color: black;
+}
+.imgContainer#caption:hover .text {
+    opacity: 1;
+    
+}
+.imgContainer#caption:hover img {
+    opacity: 0.5;
+}
+
+/*
+  ========================================
+  scroll top button
+  ========================================
+*/
+
+.scrolltopbutton{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    border: solid;
+    background-color: #f7f7f7;
+    color: #DA012E;
+    border-radius: 1rem;
+    opacity: 0;
+}
+
+
+/*
+  ========================================
+  map
+  ========================================
+*/
+
+#map{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px ;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+/*
+  ========================================
+  how it works page
+  ========================================
+*/
+#ourprocess h2{
+  color:#DA012E;
 }
