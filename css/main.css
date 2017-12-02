@@ -407,6 +407,9 @@ footer .col-md-8{
     opacity: 0;
 }
 
+.scrolltopbutton span{
+    font-family: 'Oswald', sans-serif !important;
+}
 
 /*
   ========================================
