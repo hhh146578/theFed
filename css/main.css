@@ -362,6 +362,15 @@ footer .col-md-8{
         border-color: rgba(0,0,0,1);
         margin-top: 0.54rem;
     }
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
 }
 
 /*
@@ -402,6 +411,15 @@ footer .col-md-8{
     .navbar-light .navbar-toggler {
         border-color: rgba(0,0,0,1);
         margin-top: 0.54rem;
+    }
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
     }
 }
 
