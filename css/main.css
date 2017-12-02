@@ -26,7 +26,7 @@ p{
 */
 
 nav{
-    background-color: #DA012E !important;
+    background-color: #e32636 !important;
 }
 
 .logo-first {
@@ -85,7 +85,7 @@ nav{
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     color: black;
-    background-color: #DA012E;
+    background-color: #e32636;
     font-size: 1rem;
     border-radius: .25rem;
 }
@@ -246,7 +246,7 @@ footer {
 }
 
 i{
-    color: #DA012E;
+    color: #e32636;
 }
 
 footer small{
@@ -402,7 +402,7 @@ footer .col-md-8{
     z-index: 1;
     border: solid;
     background-color: #f7f7f7;
-    color: #DA012E;
+    color: #e32636;
     border-radius: 1rem;
     opacity: 0;
 }
@@ -430,5 +430,5 @@ footer .col-md-8{
   ========================================
 */
 #ourprocess h2{
-  color:#DA012E;
+  color:#e32636;
 }
