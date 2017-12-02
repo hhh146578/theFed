@@ -259,107 +259,6 @@ footer .col-md-8{
 
 /*
   ========================================
-  Large Screen View
-  ========================================
-*/
-@media only screen and (max-width: 1023px) {
-    /*.bg-faded{
-        background: -webkit-linear-gradient(left top, lightgrey , gold);
-        background: -o-linear-gradient(left top, lightgrey , gold);
-        background: linear-gradient(to left top, lightgrey , gold);
-    }*/
-    #footer ul{
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #result{
-        text-align: left;
-    }
-
-    #footer p{
-        visibility: hidden;
-    }
-
-}
-
-/*
-  ========================================
-  Tablet View
-  ========================================
-*/
-@media only screen and (max-width: 767px) {
-    /*gallery page part*/
-    /*#gallery img{
-        height: 40%;
-        width: 30%;
-        margin: 1.66%;
-        float: left;
-        border-radius:2rem ;
-    }
-
-    #gallery::after{
-        content: '';
-        display: block;
-        clear: both;
-    }*/
-
-    /*project page part */
-    #projectContent{
-        display: inline-block;
-    }
-
-    #description {
-        display: inline-block;
-        width: 50%;
-        vertical-align: top;
-    }
-    #showprojectimages{
-        display: inline-block;
-        vertical-align: top;
-    }
-}
-
-/*
-  ========================================
-  Mobile View
-  ========================================
-*/
-@media only screen and (max-width: 419px) {
-
-    .nav-item{
-        width: 100%;
-        padding-top: 0.125rem;
-        padding-bottom: 0.125rem;
-    }
-
-    #navbarSearch{
-        width:100%;
-    }
-
-    .navbar-light .navbar-toggler {
-        border-color: rgba(0,0,0,1);
-        margin-top: 0.54rem;
-    }
-
-    h1{
-        font-size: 2rem !important;
-    }
-
-    p{
-        font-size: 1rem !important;
-    }
-
-    footer{
-        text-align: center;
-    }
-    .imgContainer#caption .text h1 {
-        font-size: 1.5rem;
-    }
-}
-
-/*
-  ========================================
   browse dogs page
   ========================================
 */
@@ -434,4 +333,112 @@ footer .col-md-8{
 */
 #ourprocess h2{
   color:#e32636;
+}
+
+/*
+  ========================================
+  Large Screen View
+  ========================================
+*/
+@media only screen and (max-width: 1024px) {
+    /*.bg-faded{
+        background: -webkit-linear-gradient(left top, lightgrey , gold);
+        background: -o-linear-gradient(left top, lightgrey , gold);
+        background: linear-gradient(to left top, lightgrey , gold);
+    }*/
+    #footer ul{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #result{
+        text-align: left;
+    }
+
+    #footer p{
+        visibility: hidden;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+}
+
+/*
+  ========================================
+  Tablet View
+  ========================================
+*/
+@media only screen and (max-width: 767px) {
+    /*gallery page part*/
+    /*#gallery img{
+        height: 40%;
+        width: 30%;
+        margin: 1.66%;
+        float: left;
+        border-radius:2rem ;
+    }
+
+    #gallery::after{
+        content: '';
+        display: block;
+        clear: both;
+    }*/
+
+    /*project page part */
+    #projectContent{
+        display: inline-block;
+    }
+
+    #description {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+    #showprojectimages{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+}
+
+/*
+  ========================================
+  Mobile View
+  ========================================
+*/
+@media only screen and (max-width: 419px) {
+
+    .nav-item{
+        width: 100%;
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;
+    }
+
+    #navbarSearch{
+        width:100%;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: rgba(0,0,0,1);
+        margin-top: 0.54rem;
+    }
+
+    h1{
+        font-size: 2rem !important;
+    }
+
+    p{
+        font-size: 1rem !important;
+    }
+
+    footer{
+        text-align: center;
+    }
+    .imgContainer#caption .text h1 {
+        font-size: 1.5rem;
+    }
 }
