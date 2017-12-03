@@ -20,7 +20,7 @@ $(document).ready(function(){
 // audio play
 $(document).ready(function() {
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'DogWoof-SoundBible.com-457935112.mp3');
+    audioElement.setAttribute('src', 'https://www.dropbox.com/s/vspmhd3ymcww0r8/DogWoof-SoundBible.com-457935112.mp3?dl=0');
 
     audioElement.addEventListener('ended', function() {
         this.play();
