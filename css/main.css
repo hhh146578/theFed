@@ -81,7 +81,7 @@ nav{
     padding-bottom: 0.5rem;
 }
 
-#navbarNav a, #navbarSearch, #play, #pause, #restart {
+#navbarNav a, #navbarSearch, #play, #pause, #restart, #btnContactUs {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
     color: black;
@@ -95,7 +95,7 @@ nav{
     padding-right: 0.25rem;
 }
 
-#navbarNav a:hover, #navbarSearch:hover, #play:hover, #pause:hover, #restart:hover{
+#navbarNav a:hover, #navbarSearch:hover, #play:hover, #pause:hover, #restart:hover, #btnContactUs:hover{
     transition: 0.3s;
     color: white;
     background-color: black;
@@ -237,6 +237,7 @@ form p{
 
 .dogwoof h6{
     text-align: center;
+    color: #e32636;
 }
 /*
   ========================================
