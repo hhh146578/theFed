@@ -347,6 +347,10 @@ footer .col-md-8{
     /*overflow: hidden;*/
 }
 
+#ouroffice{
+    text-align: center;
+}
+
 /*
   ========================================
   how it works page
@@ -480,5 +484,8 @@ footer .col-md-8{
     }
     .imgContainer#caption .text h1 {
         font-size: 1.5rem;
+    }
+    #ouroffice{
+        padding-top: 1rem;
     }
 }
