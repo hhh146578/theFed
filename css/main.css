@@ -542,4 +542,8 @@ footer .col-md-8{
     #ouroffice{
         padding-top: 1rem;
     }
+    .parallaxInner {
+      position: absolute;
+      top: 15%;
+    }
 }
