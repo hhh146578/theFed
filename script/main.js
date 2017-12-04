@@ -23,6 +23,12 @@ $('.dogwoof').on('mouseenter', '[data-hover-sound]', function () {
   var audio = new Audio($(this).attr('data-hover-sound'));
   audio.play();
 });
+
+// parallax
+
+$('.rabbitpet').parallax({imageSrc: '../img/rabbitpet.jpg'});
+$('.catplaying').parallax({imageSrc: '../img/catplaying.jpg'});
+$('.petplaying').parallax({imageSrc: '../img/petplaying.jpg'});
 // for (var i = 1; i <= 3; i++) {
 //   (function(j) {
 //     $("#image" + j).mouseenter(function() {

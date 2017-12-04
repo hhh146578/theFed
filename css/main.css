@@ -347,8 +347,33 @@ footer .col-md-8{
     /*overflow: hidden;*/
 }
 
+/*Contact Us*/
+
 #ouroffice{
     text-align: center;
+}
+
+/*Parallax*/
+.rabbitpet{
+    background-image: url("../img/rabbitpet.png");
+}
+.catplaying{
+    background-image: url("../img/catplaying.png");
+}
+.petplaying{
+    background-image: url("../img/petplaying.png");
+}
+.rabbitpet, .catplaying, .petplaying {
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    }
 }
 
 /*
