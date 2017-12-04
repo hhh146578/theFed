@@ -18,38 +18,22 @@ $(document).ready(function(){
     });
 
 // audio play
-$(document).ready(function() {
-    var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'https://www.dropbox.com/s/vspmhd3ymcww0r8/DogWoof-SoundBible.com-457935112.mp3?dl=0');
 
-    audioElement.addEventListener('ended', function() {
-        this.play();
-    }, false);
-
-    audioElement.addEventListener("canplay",function(){
-        $("#length").text("Duration:" + audioElement.duration + " seconds");
-        $("#source").text("Source:" + audioElement.src);
-        $("#status").text("Status: Ready to play").css("color","green");
-    });
-
-    audioElement.addEventListener("timeupdate",function(){
-        $("#currentTime").text("Current second:" + audioElement.currentTime);
-    });
-
-    $('#play').click(function() {
-        audioElement.play();
-        $("#status").text("Status: Playing");
-    });
-
-    $('#pause').click(function() {
-        audioElement.pause();
-        $("#status").text("Status: Paused");
-    });
-
-    $('#restart').click(function() {
-        audioElement.currentTime = 0;
-    });
+$('.dogwoof').on('mouseenter', '[data-hover-sound]', function () {
+  var audio = new Audio($(this).attr('data-hover-sound'));
+  audio.play();
 });
+// for (var i = 1; i <= 3; i++) {
+//   (function(j) {
+//     $("#image" + j).mouseenter(function() {
+//       $("#sound" + j)[0].play();
+//     });
+//     $("#image" + j).mouseleave(function() {
+//       $("#sound" + j)[0].pause();
+//     });
+//   })(i);
+// }
+
     // project page interaction
     // $('.projectimages').on('click', function() {
     //     $("#showprojectimages").attr("alt", $(this).attr('alt'));
