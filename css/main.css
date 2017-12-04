@@ -287,10 +287,10 @@ footer .col-md-8{
   browse dogs page
   ========================================
 */
-.imgContainer#caption {
+.imgContainer.caption {
     position: relative;
 }
-.imgContainer#caption .text {
+.imgContainer.caption .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -299,20 +299,23 @@ footer .col-md-8{
     opacity: 0;
     transition: all 0.8s ease;
 }
-.imgContainer#caption .text h1 {
+.imgContainer.caption .text h1 {
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
     color: black;
 }
-.imgContainer#caption:hover .text {
+.imgContainer.caption:hover .text {
     opacity: 1;
 
 }
-.imgContainer#caption:hover img {
+.imgContainer.caption:hover img {
     opacity: 0.5;
 }
-
+.imgContainer.caption p{
+    font-size: 2rem !important;
+    font-family: 'Permanent Marker', cursive !important;
+}
 /*
   ========================================
   scroll top button
