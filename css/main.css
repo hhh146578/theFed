@@ -363,12 +363,16 @@ footer .col-md-8{
 /*Parallax*/
 .rabbitpet{
     background-image: url("../img/rabbitpet.png");
+    position: relative;
 }
+
 .catplaying{
     background-image: url("../img/catplaying.png");
+    position: relative;
 }
 .petplaying{
     background-image: url("../img/petplaying.png");
+    position: relative;
 }
 .rabbitpet, .catplaying, .petplaying {
     /* Full height */
@@ -380,7 +384,11 @@ footer .col-md-8{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
-    }
+}
+
+.parallaxInner {
+  position: absolute;
+  top: 30%;
 }
 
 /*
