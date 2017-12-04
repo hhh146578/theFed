@@ -239,48 +239,7 @@ form p{
     text-align: center;
     color: #e32636;
 }
-/*
-  ========================================
-  Footer
-  ========================================
-*/
 
-footer {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    margin-top: 4rem;
-    /*margin-bottom: 0.5rem;*/
-    background-color: #f7f7f7;
-    padding: 1rem;
-    color: gray;
-    /*background: -webkit-linear-gradient(left top, lightgrey , gold);
-    background: -o-linear-gradient(left top, lightgrey , gold);
-    background: linear-gradient(to left top, lightgrey , gold);*/
-}
-
-.social-buttons{
-    font-size: 1.5rem;
-}
-
-.list-inline-item{
-    padding-right: 0.5rem;
-}
-
-i{
-    color: #e32636;
-}
-
-footer small{
-    font-family: 'Oswald', sans-serif;
-}
-
-footer .col-md-8{
-    text-align: right;
-}
-
-#footer p{
-    visibility: hidden;
-}
 
 /*
   ========================================
@@ -354,13 +313,21 @@ footer .col-md-8{
     /*overflow: hidden;*/
 }
 
-/*Contact Us*/
+/*
+  ========================================
+  Contact Us
+  ========================================
+*/
 
 #ouroffice{
     text-align: center;
 }
 
-/*Parallax*/
+/*
+  ========================================
+  Parallax
+  ========================================
+*/
 .rabbitpet{
     background-image: url("../img/rabbitpet.png");
     position: relative;
@@ -398,6 +365,49 @@ footer .col-md-8{
 */
 #ourprocess h2{
   color:#e32636;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    margin-top: 4rem;
+    /*margin-bottom: 0.5rem;*/
+    background-color: #f7f7f7;
+    padding: 1rem;
+    color: gray;
+    /*background: -webkit-linear-gradient(left top, lightgrey , gold);
+    background: -o-linear-gradient(left top, lightgrey , gold);
+    background: linear-gradient(to left top, lightgrey , gold);*/
+}
+
+.social-buttons{
+    font-size: 1.5rem;
+}
+
+.list-inline-item{
+    padding-right: 0.5rem;
+}
+
+i{
+    color: #e32636;
+}
+
+footer small{
+    font-family: 'Oswald', sans-serif;
+}
+
+footer .col-md-8{
+    text-align: right;
+}
+
+#footer p{
+    visibility: hidden;
 }
 
 /*
@@ -485,6 +495,10 @@ footer .col-md-8{
 
     #navbarSearch{
         width:100%;
+    }
+    .parallaxInner {
+      position: absolute;
+      top: 15%;
     }
 
 }
