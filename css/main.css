@@ -1,3 +1,9 @@
+/*
+  ========================================
+  Basic Setup **** Claire Koo contribution – SI 539****
+  ========================================
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker);
 
 html, body {
@@ -21,7 +27,7 @@ p{
 
 /*
   ========================================
-  Top Navigation
+  Top Navigation **** Claire Koo contribution – SI 539****
   ========================================
 */
 
@@ -131,7 +137,7 @@ nav{
 
 /*
   ========================================
-  Main
+  Jumbotron **** Claire Koo contribution – SI 539****
   ========================================
 */
 .display-3{
@@ -314,7 +320,7 @@ form p{
 
 /*
   ========================================
-  Skip to main
+  Skip to Main Navigation **** Claire Koo contribution – SI 539****
   ========================================
 */
 
@@ -345,7 +351,7 @@ form p{
 
 /*
   ========================================
-  Contact Us
+  Contact Us **** Claire Koo contribution – SI 539****
   ========================================
 */
 
@@ -355,7 +361,7 @@ form p{
 
 /*
   ========================================
-  Parallax
+  Parallax **** Claire Koo contribution – SI 539****
   ========================================
 */
 .rabbitpet{
@@ -372,10 +378,7 @@ form p{
     position: relative;
 }
 .rabbitpet, .catplaying, .petplaying {
-    /* Full height */
     height: 100%;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -390,7 +393,7 @@ form p{
 
 /*
   ========================================
-  how it works page
+  how it works page **** Claire Koo contribution – SI 539****
   ========================================
 */
 .ourprocess h2{
@@ -442,7 +445,7 @@ footer .col-md-8{
 
 /*
   ========================================
-  Mobile View
+  Mobile View **** Claire Koo contribution – SI 539****
   ========================================
 */
 @media only screen and (max-width: 419px) {
@@ -486,25 +489,10 @@ footer .col-md-8{
 
 /*
   ========================================
-  Tablet View
+  Tablet View **** Claire Koo contribution – SI 539****
   ========================================
 */
 @media only screen and (max-width: 767px) {
-    /*gallery page part*/
-    /*#gallery img{
-        height: 40%;
-        width: 30%;
-        margin: 1.66%;
-        float: left;
-        border-radius:2rem ;
-    }
-
-    #gallery::after{
-        content: '';
-        display: block;
-        clear: both;
-    }*/
-
     /*project page part */
     #projectContent{
         display: inline-block;
@@ -537,7 +525,7 @@ footer .col-md-8{
 
 /*
   ========================================
-  Large Screen View
+  Large Screen View **** Claire Koo contribution – SI 539****
   ========================================
 */
 @media only screen and (max-width: 1024px) {
