@@ -37,8 +37,13 @@ nav{
 }
 
 /*Reference for colorchange on hover: https://codepen.io/raaasin/pen/quvHr*/
-.logo-first:hover{
+.logo-first:hover, .logo-first:focus{
   -webkit-animation:colorchange 20s infinite alternate;
+}
+
+.logo-first:focus{
+    outline:1px solid red;
+    background:yellow;
 }
 
 @-webkit-keyframes colorchange {
@@ -95,11 +100,16 @@ nav{
     padding-right: 0.25rem;
 }
 
-#navbarNav a:hover, #navbarSearch:hover, #play:hover, #pause:hover, #restart:hover, #btnContactUs:hover{
+#navbarNav a:hover, #navbarSearch:hover, #play:hover, #pause:hover, #restart:hover, #btnContactUs:hover, #navbarNav a:focus, #navbarSearch:focus, #play:focus, #pause:focus, #restart:focus, #btnContactUs:focus{
     transition: 0.3s;
     color: white;
     background-color: black;
     border-color: black;
+}
+
+#navbarNav a:focus, #navbarSearch:focus, #play:focus, #pause:focus, #restart:focus, #btnContactUs:focus{
+    outline:1px solid red;
+    background:yellow;
 }
 
 #navbarSearch{
@@ -115,7 +125,7 @@ nav{
     color: white;
 }
 
-#navbarNav .active i, #navbarNav a:hover i{
+#navbarNav .active i, #navbarNav a:hover i, #navbarNav a:focus i{
     color: #e32636;
 }
 
@@ -139,7 +149,7 @@ nav{
     color: white;
 }
 
-#welcome .jumbotron {
+.welcome .jumbotron {
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.7),
@@ -152,7 +162,7 @@ nav{
     position: relative;
 }
 
-#gallery .jumbotron{
+.gallery .jumbotron{
     background:
       linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -165,7 +175,7 @@ nav{
     position: relative;
 }
 
-#contactus .jumbotron{
+.contactus .jumbotron{
     background:
       linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -178,7 +188,7 @@ nav{
     position: relative;
 }
 
-#ourprocess .jumbotron{
+.ourprocess .jumbotron{
     background:
       linear-gradient(
         rgba(0, 0, 0, 0.7),
@@ -196,8 +206,13 @@ nav{
     text-decoration: none;
 }
 
-.quicklinks .col-lg-9 h4:hover{
+.quicklinks .col-lg-9 a:hover, .quicklinks .col-lg-9 a:focus{
   -webkit-animation:colorchange 20s infinite alternate;
+}
+
+.quicklinks .col-lg-9 a:focus{
+    outline:1px solid red;
+    background:yellow;
 }
 
 .quicklinks .col-lg-3 img{
@@ -218,7 +233,7 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-#gallery img{
+.gallery img{
     height: 80%;
     width: 80%;
     margin: 2rem;
@@ -264,11 +279,11 @@ form p{
     margin: 0;
     color: black;
 }
-.imgContainer.caption:hover .text {
+.imgContainer.caption:hover .text, .imgContainer.caption:focus .text{
     opacity: 1;
 
 }
-.imgContainer.caption:hover img {
+.imgContainer.caption:hover img, .imgContainer.caption:focus img{
     opacity: 0.5;
 }
 .imgContainer.caption p{
@@ -295,6 +310,21 @@ form p{
 
 .scrolltopbutton span{
     font-family: 'Oswald', sans-serif !important;
+}
+
+/*
+  ========================================
+  Skip to main
+  ========================================
+*/
+
+.skiptomain{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
 /*
@@ -363,7 +393,7 @@ form p{
   how it works page
   ========================================
 */
-#ourprocess h2{
+.ourprocess h2{
   color:#e32636;
 }
 
