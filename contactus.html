@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- ****Hung-Wen Chen  contribution – SI 539****  head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+
     <link rel="stylesheet" href="css/main.css">
     <title>Paw Wow - Contact Us</title>
-    <script src="script/generateMap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGD352Uy7zH5XMLZ__x2XyuMyUOxVDLgQ&language=en&callback=initMap"></script>
-    <script src="script/main.js"></script>
 </head>
 
+<!-- ****Hung-Wen Chen  contribution – SI 539****  loading -->
+<div id="loading"></div>
+
+<!-- ****Hung-Wen Chen  contribution – SI 539**** navbar -->
 <body data-spy="scroll" data-target="#nav">
     <header id="home">
         <nav class="navbar fixed-top navbar-toggleable-lg navbar-light">
@@ -125,9 +126,15 @@
             </div>
         </div>
     </main>
+
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  google map -->
     <div id="map">
     </div>
+    
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  scrolltopbutton -->
     <button class="scrolltopbutton" type="button"><i class="fa fa-arrow-up" aria-hidden="true"><span>Top</span></i></button>
+
+    <!-- ****Hung-Wen Chen  contribution – SI 539****  footer -->
     <footer id="footer">
         <div class="container">
             <div class="row">
@@ -153,6 +160,25 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"></script>
+    <script src="script/generateMap.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGD352Uy7zH5XMLZ__x2XyuMyUOxVDLgQ&language=en&callback=initMap"></script>
+    <script src="script/main.js"></script>
 </body>
 
 </html>
