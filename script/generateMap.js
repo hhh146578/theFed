@@ -1,7 +1,8 @@
 
 /*
   ========================================
-  Google Map ****Hung-Wen Chen  contribution – SI 539****
+  ****Hung-Wen Chen  contribution – SI 539****
+  Google Map 
   ========================================
 */
 
