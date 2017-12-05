@@ -264,6 +264,7 @@ form p{
 
 /*
   ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
   browse dogs page
   ========================================
 */
@@ -298,6 +299,7 @@ form p{
 }
 /*
   ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
   scroll top button
   ========================================
 */
@@ -335,7 +337,8 @@ form p{
 
 /*
   ========================================
-  map
+  ****Hung-Wen Chen  contribution – SI 539****
+  googel map
   ========================================
 */
 
@@ -402,6 +405,7 @@ form p{
 
 /*
   ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
   Footer
   ========================================
 */
@@ -559,4 +563,18 @@ footer .col-md-8{
     #navbarSearch{
         width:100%;
     }
+}
+
+/*
+  ========================================
+  ****Hung-Wen Chen  contribution – SI 539****
+  Loading
+  ========================================
+*/
+#loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:2;
+    background:url("../img/load.gif") no-repeat center center rgba(0,0,0,0.25)
 }
