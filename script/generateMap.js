@@ -1,4 +1,10 @@
 
+/*
+  ========================================
+  Google Map ****Hung-Wen Chen  contribution – SI 539****
+  ========================================
+*/
+
 var map;
 var newMarker;
 function initMap() {
@@ -7,6 +13,8 @@ function initMap() {
 		zoom: 5,
 		center: new google.maps.LatLng(37.7718079,-122.3980182)
 	});
+      var labels = 'Our office';
+      // var labelIndex = 0;
 
 	var smallIcon = {
 		url: "img/icon.jpg", // url
@@ -17,11 +25,15 @@ function initMap() {
 		position: {lat: 37.7718079, lng: -122.3980182},
 		map: map,
 		icon: smallIcon,
+		label: labels,
 		draggable: true,
 		animation: google.maps.Animation.DROP,
 	});
+
+
 	newMarker.addListener('click', toggleBounce);
 	newMarker.setAnimation(google.maps.Animation.BOUNCE);
+
 
 	google.maps.event.addDomListener(window, "resize", function() {
 		var center = map.getCenter();
